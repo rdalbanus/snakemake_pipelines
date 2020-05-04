@@ -1,0 +1,20 @@
+ionice: "ionice -c2 -n7"
+results: "work/nucleoATAC/{sample}"
+genome: "/lab/data/reference/human/hg19/hg19.fa"
+cores: 4
+
+samples:
+    lab_gm12878:
+        bam: 
+            "/lab/work/albanus/2018_redo_all/work/mapping/prune/\
+             lab_gm12878.pruned.bam"
+        peaks: 
+            "/lab/work/albanus/2018_redo_all/work/mapping/macs2/\
+             lab_gm12878_peaks.broadPeak.noblacklist"
+    buenrostro_rep1:
+        bam: 
+            "/lab/work/albanus/2018_redo_all/work/mapping/prune/\
+             buenrostro_rep1.pruned.bam"
+        peaks: 
+            "/lab/work/albanus/2018_redo_all/work/mapping/macs2/\
+             buenrostro_rep1_peaks.broadPeak.noblacklist"
