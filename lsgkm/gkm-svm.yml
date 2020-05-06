@@ -1,0 +1,17 @@
+ionice: "ionice -c2 -n7"
+gkmbin: "~/software/lsgkm/bin"
+results: "work/gkm-svm/{sample}"
+genome: "/lab/data/reference/human/hg19/hg19.fa"
+genome_size: "/lab/data/reference/human/hg19/hg19.chrom_sizes"
+bl_regions: "/lab/data/reference/human/hg19/annot/\
+             wgEncodeDacMapabilityConsensusExcludable.bed.gz \
+             /lab/data/reference/human/hg19/annot/\
+             wgEncodeDukeMapabilityRegionsExcludable.bed.gz"
+cores: 4
+memory: "32000"
+
+samples:
+    lab_gm12878:
+        peaks: 
+            "../2018_redo_all/work/mapping/macs2/\
+             lab_gm12878_peaks.broadPeak.noblacklist"
